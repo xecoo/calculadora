@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+  <form id="formCalc" 
+    onsubmit="Calculadora(document.getElementById('fvalue'),
+    document.getElementById('svalue'),
+    document.getElementsByClassName('submit').value)"  
+  >
+    <label for="fname">Primeiro valor:</label><br>
+    <input type="number" id="fvalue" name="fvalue" value=""><br>
+    <label for="lname">Segundo valor:</label><br>
+    <input type="number" id="svalue" name="svalue" value=""><br>
+    <input type="submit" value="soma">
+    <input type="submit" value="subtracao"><br>
+    <labeL></labeL><br>
+    <input type="submit" value="multiplicacao">
+    <input type="submit" value="divisao">
+  </form>
+  <h2 id='result'></h2>
+  <script type="text/javascript" src="operacoes.js"></script>
+</body>
+
+</html>
