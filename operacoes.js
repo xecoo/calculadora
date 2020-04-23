@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function Calculadora(firstValue, secondValue, operacao) {
+function calculadora(firstValue, secondValue, operacao) {
     switch (operacao) {
         case "soma":
             result = firstValue + secondValue;
@@ -46,4 +46,4 @@ function Calculadora(firstValue, secondValue, operacao) {
     return result;
 }
 
-Calculadora();
+module.exports = calculadora;
