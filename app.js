@@ -3,7 +3,6 @@ const fs = require('fs');
 const porta = 3000;
 
 const server = http.createServer(function (req, res) {
-
     try {
         if (req.url === "/") {
             fs.readFile(__dirname + '/form.html', function (e, html) {
