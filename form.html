@@ -8,22 +8,22 @@
 </head>
 
 <body>
-  <form id="formCalc">
+  <form>
     <label for="fname">Primeiro valor:</label><br>
     <input type="number" id="fvalue" name="fvalue" value=""><br>
     <label for="lname">Segundo valor:</label><br>
     <input type="number" id="svalue" name="svalue" value=""><br>
-    <input type="submit" value="soma">
-    <input type="submit" value="subtracao"><br>
-    <input type="submit" value="multiplicacao">
-    <input type="submit" value="divisao">
+    <input type="button" value="soma"
+      onclick="calculadora(document.getElementById('fvalue').value,document.getElementById('svalue').value,'soma');">
+    <input type="button" value="subtracao"
+      onclick="calculadora(document.getElementById('fvalue'),document.getElementById('svalue'),'subtracao');">
+    <input type="button" value="multiplicacao"
+      onclick="calculadora(document.getElementById('fvalue'),document.getElementById('svalue'),'multiplicacao');">
+    <input type="button" value="divisao"
+      onclick="calculadora(document.getElementById('fvalue'),document.getElementById('svalue'),'divisao');">
   </form>
-  <h4 id='result'></h4>
-  <script type="module" src="./operacoes.js">
-    firstValue = document.getElementById('fvalue');
-      secondValue = document.getElementById('svalue');
-      operacao = document.getElementsByClassName('submit').value;
-  </script>
+  <h4 id='result' onload="return calculadora()"></h4>
+  <script type="text/javascript" src="./operacoes.js"></script>
 </body>
 
 </html>
