@@ -10,19 +10,19 @@
 <body>
   <form>
     <label for="fname">Primeiro valor:</label><br>
-    <input type="number" id="fvalue" name="fvalue" value=""><br>
+    <input type="number" id="fvalue" name="fvalue" value="0"><br>
     <label for="lname">Segundo valor:</label><br>
-    <input type="number" id="svalue" name="svalue" value=""><br>
+    <input type="number" id="svalue" name="svalue" value="0"><br>
     <input type="button" value="soma"
-      onclick="calculadora(document.getElementById('fvalue').value,document.getElementById('svalue').value,'soma');">
+      onclick="calculadora('soma');">
     <input type="button" value="subtracao"
-      onclick="calculadora(document.getElementById('fvalue'),document.getElementById('svalue'),'subtracao');">
+      onclick="calculadora('subtracao');">
     <input type="button" value="multiplicacao"
-      onclick="calculadora(document.getElementById('fvalue'),document.getElementById('svalue'),'multiplicacao');">
+      onclick="calculadora('multiplicacao');">
     <input type="button" value="divisao"
-      onclick="calculadora(document.getElementById('fvalue'),document.getElementById('svalue'),'divisao');">
+      onclick="calculadora('divisao');">
   </form>
-  <h4 id='result' onload="return calculadora()"></h4>
+  <h4 id='result'></h4>
   <script type="text/javascript" src="./operacoes.js"></script>
 </body>
 
