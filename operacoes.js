@@ -1,3 +1,4 @@
+
 function calculadora(operacao) {
 let result = 0;
 const firstValue = Number(document.getElementById('fvalue').value);
